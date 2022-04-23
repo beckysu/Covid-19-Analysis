@@ -5,7 +5,6 @@ Queries used for Tableau Project
 */
 
 
-
 -- 1. 
 
 Select SUM(new_cases) as total_cases, SUM(new_deaths) as total_deaths, SUM(cast(new_deaths as decimal))/SUM(new_cases)*100 as DeathPercentage
@@ -112,7 +111,7 @@ order by 1,2
 
 -- 3.
 
--- We take these out as they are not inluded in the above queries and want to stay consistent
+-- We take these out as they are not included in the above queries and want to stay consistent
 -- European Union is part of Europe
 
 Select location, SUM(new_deaths) as TotalDeathCount
